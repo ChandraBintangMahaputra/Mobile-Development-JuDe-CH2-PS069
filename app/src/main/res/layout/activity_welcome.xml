@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Welcome to JuDe"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"/>
+
+    <ImageView
+        android:id="@+id/logowelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="logo app welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/logowelcome"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/logowelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:text="Sign Up"
+            android:textSize="10pt"
+            android:contentDescription="button sign up"
+            android:textColor="@color/orange"
+            app:layout_constraintTop_toBottomOf="@+id/logowelcome"
+            android:background="@drawable/button_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignIn"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:text="Sign In"
+            android:textSize="10pt"
+            android:contentDescription="button sign up"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/logowelcome"
+            android:background="@drawable/button_white_stroke"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
